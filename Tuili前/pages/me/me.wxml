@@ -1,0 +1,65 @@
+<view class="container">
+	<view class="userinfo">
+		<image wx:if="{{userinfo && userinfo.user_image}}" class="userinfo-avatar" src="{{ userinfo.user_image }}" background-size="cover" style='border-radius:50%'></image>
+		<text class="userinfo-nickname">{{ userinfo.user_name }}</text>
+	</view>
+  <view class="asset">
+    <view class='item' bindtap='go_collect'>
+      <view>{{collect}}</view>
+      <view>我的收藏</view>
+    </view>
+    <view class='item right' bindtap='go_zan'>
+      <view>{{zan}}</view>
+      <view>我的点赞</view>
+    </view>
+  </view>
+  <view style="height:10rpx;background: #eee;width:100%;"></view>
+  <view class='order-shortcut'>
+    <view class='item' data-type="0">
+        <navigator url="/pages/systeminfo/systeminfo">
+            <image class="icon" src="/images/icons/system.png" background-size="cover"></image>
+            <view class='text'>系统信息</view>
+        </navigator>
+    </view>
+    <view class='item' data-type="1">
+        <navigator url="/pages/map/map" background-size="cover">
+            <image class="icon" src="/images/icons/map.png" background-size="cover"></image>
+            <view class='text'>我的位置</view>
+        </navigator>
+    </view>
+    <view class='item' data-type="2">
+        <navigator url='../music/music'>
+            <image class="icon" src="/images/icons/music.png" background-size="cover"></image>
+            <view class='text'>背景音乐</view>
+        </navigator>
+    </view>
+  </view>
+
+  <view style="height:10rpx;background: #eee;width:100%;"></view>
+  <view class="my-item">
+    <navigator url="/pages/liuyan/liuyan" hover-class="navigator-hover">留言板</navigator>
+  </view>
+  <view class="my-item" bindtap="go_user_info">
+    我的信息
+  </view>
+  <view class="my-item">
+    <navigator url="/pages/small/small" hover-class="navigator-hover">关于小程序</navigator>
+  </view> 
+  <view style="height:20rpx;background: #eee;width:100%;"></view>
+  <view class="about" bindtap="aboutUs">
+    <navigator url="/pages/muziinfo/muziinfo">
+        关于我
+    </navigator>
+  </view>
+
+  <view style="height:20rpx;background: #eee;width:100%;"></view>
+  <view class="my-item to-authorize">
+    <navigator url="/pages/authorize/authorize">
+        <button type="warn" bindtap="relogin">重新授权登录</button>
+    </navigator>
+  </view>
+  
+  <view style="height:20rpx;background: #eee;width:100%;"></view>
+  <view class="version">Powered by Muzi | https://www.muzimz.cn</view>
+  <view style="height:20rpx;background: #eee;width:100%;"></view>
+</view>

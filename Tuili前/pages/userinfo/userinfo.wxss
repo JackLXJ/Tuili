@@ -1,0 +1,19 @@
+.user-info {
+    display: flex;
+    flex-direction: column
+}
+
+.image_url {
+    word-wrap: break-word;
+}
+
+.user-image {
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 120rpx;
+    height: 120rpx;
+    border-radius: 50%
+}

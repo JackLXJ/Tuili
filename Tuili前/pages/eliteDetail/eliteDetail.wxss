@@ -1,0 +1,49 @@
+.video-container {
+    width: 100%;
+    margin-top: 10rpx
+}
+
+.desc {
+    width: 100%;
+    color: red;
+    font-size: 20rpx;
+}
+
+.movie-item {
+	display: flex;
+	flex-direction: row;
+	margin: 40rpx;
+}
+
+.movie-item .movie-haibao image {
+	height: 400rpx;
+	width: 270rpx
+}
+
+.movie-item .movie-info {
+	height: 400rpx;
+	display: flex;
+	flex-direction: column;
+	margin-left: 20rpx
+}
+
+.movie-item .movie-info .movie-title {
+	font-size: 40rpx;
+	color: #CD6839;
+	margin-left: 20rpx;
+}
+
+.movie-item .movie-info .movie-text {
+    display: flex;
+    flex-direction: column;
+    font-size: 25rpx;
+}
+
+.youname-item {
+    margin-top: 10rpx
+}
+
+.movie-content {
+	margin: 40rpx;
+    font-size: 30rpx;
+}

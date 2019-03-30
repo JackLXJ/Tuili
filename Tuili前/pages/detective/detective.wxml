@@ -1,0 +1,72 @@
+<view class="container">
+<!-- <scroll-view scroll-y="true" class="container" bindscrolltoupper="load_data" upper-threshold="10" lower-threshold="5" bindscrolltolower="load_data"  scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}" style="height:{{win_height}}px"> -->
+    <view class="swiper-container">
+        <swiper style="width:100%; height:350rpx" autoplay='true' indicator-dots='true' circular='true' interval='3000'>
+        <swiper-item wx:for="{{haibao_urls}}" wx:key="{{index}}">
+            <navigator>
+                <image src="{{item}}" style="width:100%; height:350rpx"></image>
+            </navigator>
+        </swiper-item>
+        </swiper>
+    </view>
+
+    <view class="type-container">
+        <scroll-view class="type-navbar" scroll-x="true" scroll-left="{{cateScrollTop}}">
+            <view class="type-box" wx:for-items="{{categories}}" wx:key="id">
+                <view id="{{item}}" class="{{activeCategoryId == item ? 'selected' : 'normal'}}" bindtap="change_data">
+                    {{item}}
+                </view>
+            </view>
+        </scroll-view>
+    </view>
+
+    <view class="content-container">
+        <!-- <block wx:for="{{detective_data}}" wx:key="{{index}}"> -->
+            <view class="box-item" id="{{item.id}}" wx:for="{{detective_data}}" wx:key="{{index}}">
+                <view class="header-item">
+                    <view class="header-left">
+                        <image src="{{item.image}}" style="height:60rpx; width:60rpx;"></image>
+                        <text class="title">{{item.id-11}}. {{item.title}}</text>
+                    </view>
+                    <text class="more" bindtap="look_detail" id="{{item.id}}">...</text>
+                </view>
+
+                <view class="content-item">
+                    <image src="{{item.content_image}}"></image>
+                    <text class="content" bindtap="look_detail" id="{{item.id}}">{{item.project}}</text>
+                </view>
+
+                <view class="info-item">
+                    <!-- <view class="answer">
+                        <text>答案:{{item.destription}}</text>
+                    </view> -->
+                    <view class="others">
+                        <view class="zan" bindtap='change_zan_status' id="{{item.id}}">
+                            <image wx:if="{{storage_data[item.id-1].zan_status}}" src="/images/icons/zan-1.png"  style='height:35rpx;width:35rpx'></image>
+                            <image wx:else src="/images/icons/zan-0.png" style='height:35rpx;width:35rpx'></image>
+                            <text>{{item.zan_count}}</text>
+                        </view>
+                        <view class="collect" bindtap='change_collect_status' id="{{item.id}}">
+                            <image wx:if="{{storage_data[item.id-1].collect_status}}" src="/images/icons/star-1.png"  style='height:35rpx;width:35rpx'></image>
+                            <image wx:else src="/images/icons/star-0.png" style='height:35rpx;width:35rpx'></image>
+                            <text>{{item.collect_count}}</text>
+                        </view>
+                        <view class="eye">
+                            <image src="/images/icons/eye.png" style='height:35rpx;width:35rpx'></image>
+                            <text>{{item.watch_count}}</text>
+                        </view>
+                        <view class="comment">
+                            <image src="/images/icons/comment.png" style='height:35rpx;width:35rpx'></image>
+                            <text>{{item.comment_count}}</text>
+                        </view>
+                        <!-- <text>阅读数：{{item.zan}}</text>
+                        <text class="point">·</text>
+                        <text>评论数：{{item.comment}}</text> -->
+                    </view>
+                </view>
+                <view class="inline"></view>
+            </view>
+            
+        <!-- </block> -->
+    </view>
+</view>

@@ -1,0 +1,117 @@
+.content-container {
+	margin-bottom: 70rpx
+}
+
+.input-container {
+	display: flex;
+	flex-direction: row;
+	margin: 30rpx;
+}
+
+.input-item {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	margin: 20rpx;
+	height: 70rpx;
+	line-height: 70rpx;
+	border: 2rpx solid #CCCCCC;
+	width: 72%;
+	border-radius: 10rpx;
+	background-color: #FFFFFF;
+	width: 100%;
+}
+
+.btn {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	margin: 20rpx;
+	height: 70rpx;
+	line-height: 70rpx;
+	width: 20%;
+	background-color: #8DB6CD
+}
+
+.content-container {
+	display: flex;
+	flex-direction: column;
+}
+
+.content-container .liuyan {
+	display: flex;
+	flex-direction: row;
+	margin: 20rpx;
+}
+
+.content-container .liuyan .user-image image {
+	width: 80rpx;
+	height: 80rpx;
+	border-radius: 50%
+}
+
+.content-container .user-info {
+	display: flex;
+	flex-direction: column;
+	margin-left: 30rpx
+}
+
+.content-container .user-info .top {
+	display: flex;
+	flex-direction: row;
+	font-size: 20rpx;
+	color: #999999
+}
+
+.content-container .liuyan .user-info .user-liuyan {
+	margin-top: 10rpx;
+	background-color: #E0EEEE;
+	padding: 20rpx;
+	font-size: 30rpx 
+}
+
+.other-liuyan {
+	display: flex;
+	flex-direction: row;
+	margin: 20rpx;
+	justify-content: flex-end; 
+}
+
+.other-liuyan .other-image image {
+	width: 80rpx;
+	height: 80rpx;
+	border-radius: 50%;
+}
+
+.other-liuyan .other-info {
+	display: flex;
+	flex-direction: column;
+	margin-right: 30rpx;
+}
+
+.other-liuyan .other-info .other-liuyan {
+		margin-top: 10rpx;
+		background-color: #FFD39B;
+		padding: 20rpx;
+		font-size: 30rpx;
+        border-radius: 10rpx;
+}
+
+.content-container .other-info .other-top {
+	display: flex;
+	flex-direction: row;
+	font-size: 20rpx;
+	color: #999999;
+	justify-content: flex-end;
+}
+.user-time {
+    margin-left: 15rpx
+}
+
+.other-name {
+    margin-right: 15rpx
+}
+
+
+
+

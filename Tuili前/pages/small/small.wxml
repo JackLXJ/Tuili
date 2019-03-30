@@ -1,0 +1,18 @@
+<view class="container">
+    <view class="content-container">
+        <text style="font-weight:bold;text-align:center;margin-bottom:10rpx">Detective | 案发现场相关说明</text>
+        <text style="font-size:33rpx;margin-bottom:10rpx">众所周知，自2018年年初跳一跳发布以来，微信小程序立刻风靡全国，瞬间就融入了大家的视野。正如张小龙曾经在朋友圈说过一句话：“小程序是一个不需要下载安装就可使用的应用，它实现了应用触手可及的梦想，用户扫一扫或者搜一下即可打开应用。也体现了用完即走的理念，用户不用关心是否安装太多应用的问题。应用将无处不在，随时可用，但又无需安装卸载。”正是因为微信小程序的“小”、“用完即走”的等特性才受到了大家的青睐。</text>
+        <text style="font-size:33rpx;margin-bottom:10rpx">临近毕业，想要开发一款属于自己的微信小程序，该想法自去年就有了，但受到自身的惰性等因素的限制而一直迟迟无果。由于自身对推理还算是感兴趣，一直活跃在不少推理网站中，所以最终选择开发一款侦探推理类的小程序。在这，对该小程序做出如下几点说明。</text>
+        <text style="font-weight:bold;margin-bottom:10rpx">一、免责声明</text>
+        <view class="inline;"></view>
+        <text style="font-size:33rpx">该小程序中的数据大多数为网络公开资源，由爬虫所获取，所有数据只供广大好友分享，不做商用，如果侵犯到您的权益，请立即联系木子，看到并核实后会第一时间进行处理。</text>
+        
+        <text style="font-weight:bold;margin-bottom:10rpx">二、技术说明</text>
+        <view class="inline;"></view>
+        <text style="font-size:33rpx">Detectve | 案发现场是一款侦探推理类的小程序，开发初衷是向大家分享有意思的推理信息，希望能在闲暇之余开动自己的大脑来一场推理秀，同时也希望能结识一些志同道合的朋友。</text>
+        <text style="font-size:33rpx">该小程序前端由WXML、WXSS、JS组成，后端由Java开发，使用的数据库为Mysql，使用的IDE是微信开发者工具和Sublime Text，目前部署在腾讯云。该项目除了一些敏感信息之外，目前已经开源在Github，有需要自取。</text>
+        <text style="font-weight:bold;margin-bottom:10rpx">二、功能说明</text>
+        <view class="inline;"></view>
+        <text style="font-size:33rpx">由于个人时间、精力、能力有限，从设计到美工到前端到后端一个人弄是在太累了，有点吃不消，再加上还有其他一些其他事情要处理，所以暂时止步于此，不对其进行扩展。用户在使用的过程中如果发现Bug，实属正常，如果有Bug存在或是有什么好的提议，用户可在 我的->留言板 对我进行留言，有时间一定对其进行处理。目前引入了大量推理题库以及侦探推理相关的视频和语录。</text>
+    </view>
+</view>

@@ -1,0 +1,46 @@
+{
+  "pages":[
+    "pages/authorize/authorize",
+    "pages/welcome/welcome",
+    "pages/detective/detective",
+    "pages/index/index",
+    "pages/me/me",
+    "pages/elite/elite"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#F4F4F4",
+    "navigationBarTitleText": "Detective | 案发现场",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color": "#6e6d6b",
+    "selectedColor": "#9AC0CD",
+    "borderStyle": "white",
+    "backgroundColor": "#F4F4F4",
+    "list": [
+        {   "iconPath": "images/icons/detective-0.png",
+            "selectedIconPath": "images/icons/detective-1.png",
+            "pagePath": "pages/detective/detective",
+            "text": "推理集"
+        },
+        {
+            "iconPath": "images/icons/elite-0.png",
+            "selectedIconPath": "images/icons/elite-1.png",
+            "pagePath": "pages/elite/elite",
+            "text": "推理荐"
+        },
+        {
+            "iconPath": "images/icons/me-0.png",
+            "selectedIconPath": "images/icons/me-1.png",
+            "pagePath": "pages/me/me",
+            "text": "我的"
+        }
+    ]},
+
+    "permission": {
+        "scope.userLocation": {
+            "desc": "你的位置将用于小程序位置接口的下过展示"
+        }
+    }    
+}

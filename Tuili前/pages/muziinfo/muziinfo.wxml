@@ -1,0 +1,50 @@
+<view class="container">
+    <view class="content-container">
+        
+        <text style="font-size:33rpx;margin-bottom:10rpx">大家好，我是木子，互联网的一位忠实用户。平时性格内向、沉默寡言、形单影只，但热衷各种IT技术，对其有着强烈的追求，目前正努力朝着一名极客方向发展。</text>
+        <text style="font-size:33rpx;margin-bottom:10rpx">本人擅长Ai、Fw、Fl、Br、 Ae、Pr、Id、Ps等软件的安装与卸载，精通 CSS、JavaScript、PHP、ASP、C、C＋＋、 C#、Java、Ruby、Perl、Lisp、python、 Objective-C、ActionScript、Pascal等单词拼 写，熟悉Windows、Linux、Mac、 Android、IOS、WP8等系统的开关机……</text>
+        <view class="image-item">
+            <image src="https://tuili.muzimz.cn/Tuili/uploads/images/sponsor/xiaohua.jpg" class="image"></image>
+        </view>
+        <text style="font-size:33rpx;margin-bottom:10rpx">QQ：26647879</text>
+        <text style="font-size:33rpx;margin-bottom:10rpx">VX：LT510087153</text>
+        <text style="font-size:33rpx;margin-bottom:10rpx">首页：https://www.muzimz.cn</text>
+        <text style="font-size:33rpx;margin-bottom:10rpx">个人站点：https://jacklxj.github.io</text>
+        <text style="font-size:33rpx;margin-bottom:10rpx">Github：https://github.com/JackLXJ/</text>
+
+        <view class="sponsor" style="margin-top:30rpx;margin:30rpx">
+            <text style="font-weight:bold;font-size:60rpx">赞助</text>
+            <view style="width:100%;margin-top:20rpx"></view>
+            <text style="font-size:33rpx;margin-bottom:10rpx;margin-top:20rpx">该小程序目前部署在腾讯云，学生党目前的资金有限，购买的服务器期限只有三个月，如果觉得该小程序及网站对您有用，您可以动一动金手指给予木子小额的赞助。木子严明：赞助仅用作腾讯云服务器续费的开销，赠人玫瑰，手留余香，不胜感激，以下赞助名单将会永远保存下去，感谢你们的支持。</text>
+        </view>
+    </view>
+
+    <view class="zhifubao-weixin">
+        <view class="desc">
+            <text>支付宝</text>
+            <text>微信</text>
+        </view>
+        <view class="image-item">
+            <image class="zhifubao" src="XXXXXX/uploads/images/sponsor/alipay.png"></image>
+            <image class="weixin" src="XXXXXX/uploads/images/sponsor/wechatpay.png"></image>
+        </view>
+        
+    </view>
+
+    <view class='history-table-wrap' style="margin-bottom:30rpx">
+        <view class="table">
+            <view class="tr">
+                <view class="th th1">时间</view>
+                <view class="th th2">用户</view>
+                <view class="th th3">方式</view>
+                <view class="th th4">金额</view>
+            </view>
+            <view class="tr" wx:for="{{sponsor_data}}" wx:key="{{index}}">
+                <view class="td td1">{{item.time}}</view>
+                <view class="td td2">{{item.name}}</view>
+                <view class="td td3">{{item.way}}</view>
+                <view class="td td4">{{item.money}}</view>
+            </view>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,42 @@
+<view class="container">
+    <view class="content-container">
+        <block wx:for="{{liuyan_data}}" wx:key="{{index}}">
+            <view class="other-liuyan" wx:if="{{item.openid=='o64bc4p_1rD9NO-nazCEQwd7JWU8'}}">
+                <view class="other-info">
+                    <view class="other-top">
+                        <text class="other-name">{{item.user_name}}</text>
+                        <text class="other-time">{{item.liuyan_time}}</text>
+                    </view>
+                    <text class="other-liuyan">{{item.liuyan}}</text>
+                </view>
+
+
+                <view class="other-image">
+                    <image src="{{item.user_image}}"></image>
+                </view>
+                
+            </view>
+            <view class="liuyan" wx:else>
+                <view class="user-image">
+                    <image src="{{item.user_image}}"></image>
+                </view>
+
+                <view class="user-info">
+                    <view class="top">
+                        <text class="user-name">{{item.user_name}}</text>
+                        <text class="user-time">{{item.liuyan_time}}</text>
+                    </view>
+                    <text class="user-liuyan">{{item.liuyan}}</text>
+                </view>
+
+            </view>
+        </block>
+    </view>
+
+    <form bindsubmit="add_liuyan">
+        <view class="input-container">
+            <input name="liuyan" value="{{input_value}}" type="text" class="input-item" placeholder='感谢您的建议！'/>
+            <button  formType="submit" class="btn">留言！</button>
+        </view>
+    </form>
+</view>

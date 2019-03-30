@@ -1,0 +1,33 @@
+<view class="container">
+    <text class="desc">说明：资金有限，服务器性能不是很好，如果有卡顿现象则刷新或者缓存一会儿即可</text>
+    <view class="video-container">
+        <video class="video-container" src="{{movie_data.movie_url}}"></video>
+    </view>
+
+    <view class="wait-text" style="text-align:center;color:red;font-size:35rpx">请等待一小会儿，超无敌好看的视频正在加载中！</view>
+
+    <view class="movie-item" id="{{movie_data.movie_id}}">
+        <view class="movie-haibao">
+            <image src="{{movie_data.haibao_url}}"></image>
+        </view>
+
+        <view class="movie-info">
+            <view class="top">
+                <image src="/images/icons/video.png" style="height:30rpx;width:30rpx"></image>
+                <text class="movie-title">{{movie_data.title}}</text>
+            </view>
+            <view class="movie-text">
+                <text class="movie-class">类型：{{movie_data.movie_class}}</text>
+                <text class="movie-actor">演员：{{movie_data.actor}}</text>
+                <text class="movie-show">上映时间：{{movie_data.be_on}}</text>
+                <text class="movie-time">时长：{{movie_data.time}}</text>
+                <view class="youname-item">
+                    <text>又名：{{movie_data.you_name}}</text>
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class="movie-content">
+        <text>{{movie_data.content}}</text>
+    </view>
+</view>

@@ -1,0 +1,25 @@
+.content-container {
+    display: flex;
+    flex-direction: column;
+}
+
+text {
+    word-wrap: break-word;
+    margin-left: 20rpx;
+    margin-right: 20rpx;
+    margin-top: 10rpx;
+    margin-bottom: 5rpx; 
+}
+
+.inline {
+    width: 95%;
+    height: 5rpx;
+    background-color: #000000;
+    /* text-align: center */
+    display: flex;
+    justify-content: center;
+    line-height: 7rpx;
+    margin: 0 auto;
+    margin-top: 10rpx;
+    margin-bottom: 10rpx
+}

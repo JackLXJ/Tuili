@@ -1,0 +1,74 @@
+<view class="container">
+    <view class="content-image">
+        <image src="{{detective_content.content_image}}" style="width:750rpx;height:450rpx"></image>
+    </view>
+
+    <text class="q" style="font-size:45rpx;color:red">问题:</text>
+
+    <view class="problem">
+        <text>{{detective_content.project}}</text>
+    </view>
+
+    <text class="O" style="font-size:45rpx;color:red">选项:</text>
+
+    <view class="options">
+        <block wx:for="{{option_data}}" wx:key="{{index}}">
+            <text>{{item.option}}</text>
+        </block>
+    </view>
+
+    <view class="others">
+        <view class="zan">
+            <text>赞:{{detective_content.zan_count}}</text>
+        </view>
+        <view class="collect">
+            <text>收藏:{{detective_content.collect_count}}</text>
+        </view>
+        <view class="watch">
+            <text>浏览:{{detective_content.watch_count}}</text>
+        </view>
+        <view class="comment">
+            <text>评论:{{detective_content.comment_count}}</text>
+        </view>
+    </view>
+
+
+    <form bindsubmit="form_submit">
+        <input type="text" name="comment_" placeholder='答案评论后可见哦！！！' value="{{input_value}}" class="input-item"/>
+        <button formType="submit" class="btn" wx:if="{{!openid}}" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo" bindtap='login'>授权登录</button>
+        <button formType="submit" class="btn" wx:else>提交评论</button>
+        <input type="text" name="nickname" value='{{nickName}}' style="display:none;"/>
+        <input type="text" name="headimg" value='{{avatarUrl}}' style="display:none;"/>
+    </form>
+
+
+
+
+    <view class="answer-comment" wx:if="{{is_watch}}">
+        <text class="a" style="font-size:45rpx;color:red">答案:</text>
+        <view class="answer">
+            <text>{{detective_content.description}}</text>
+        </view>
+
+        <text class="c" style="font-size:45rpx;color:red">评论({{all_comment.length}}):</text>
+        <block wx:for="{{all_comment}}" wx:key="{{index}}">
+            <view class="comment">
+                <view class="user-image">
+                    <image src="{{item.user_image}}"></image>
+                </view>
+
+                <view class="user-info">
+                    <text class="user-name">{{item.user_name}}</text>
+                    <text class="user-comment">{{item.content}}</text>
+                    <text class="user-time">{{item.comment_time}}</text>
+                </view>
+                   
+            </view>
+             <view class="inline"></view>
+        </block>
+    </view>
+    <view class="explain" wx:else>
+        <text>所谓的无解只是你还没想到摆了！再想想吧，相信聪明的你一定能找到真相。</text>
+        <text>评论后可见答案及其他用户的评论。</text>
+    </view>
+</view>

@@ -1,0 +1,15 @@
+<view class="container">
+    <view>
+        <image  class="user-image" src="{{user_info.user_image}}" background-size="cover"></image>
+    </view>
+    <view class="user-info">
+        <text class="user-name" style="margin:20rpx">微信昵称：{{user_info.user_name}}</text>
+        <text style="margin:20rpx">赞数：{{zan}}</text>
+        <text style="margin:20rpx">收藏数：{{collect}}</text>
+        <text style="margin:20rpx">省：{{user_info.province}}</text>
+        <text style="margin:20rpx">城市：{{user_info.city}}</text>        
+        <text style="margin:20rpx">您的openid：{{user_info.openid}}</text>
+        <text style="margin:20rpx">你的注册时间戳：{{user_info.create_time}}</text>
+        <text style="margin:20rpx;" class="image_url">您的头像地址：{{user_info.user_image}}</text>
+    </view>
+</view>

@@ -1,0 +1,42 @@
+<view class="container">
+
+    <view class="detective-yulu">
+        <view class="yulu-image">
+            <image src="XXXXXX/uploads/images/haibao/kenan.png" style="width:100%"></image>
+        </view>
+        <view style="margin:20rpx">
+            <text style="font-size:25rpx">本想整理一些自己之前所阅读侦探小说中的经典语录放在这上面，但发现推理学院排名第二的"神探亨特"大佬已经整理的足够详细，所以我这里就不拿出来了，感兴趣的话可以前往阅读大佬的整理，里面有各种系列！</text>
+            <view class="inlie" style="width:100%"></view>
+            <text style="color:#BC8F8F">侦探经典语录整理：</text>
+            <view class="inlie" style="width:100%"></view>
+            <text style="font-size:30rpx;color:#BC8F8F">http://www.tuilixy.net/thread-73089-1-1.html</text>
+        </view>
+    </view>
+
+
+    <view class="movie-container">
+        <block wx:for="{{movie_data}}" wx:key="{{index}}">
+            <view class="movie-item" bindtap="go_detail" id="{{item.movie_id}}">
+                <view class="movie-haibao">
+                    <image src="{{item.haibao_url}}"></image>
+                </view>
+
+                <view class="movie-info">
+                    <view class="top">
+                        <image src="/images/icons/video.png" style="height:30rpx;width:30rpx"></image>
+                        <text class="movie-title">{{item.title}}</text>
+                    </view>
+                    <text class="movie-class">类型：{{item.movie_class}}</text>
+                    <text class="movie-actor">演员：{{item.actor}}</text>
+                    <text class="movie-show">上映时间：{{item.be_on}}</text>
+                    <text class="movie-time">时长：{{item.time}}</text>
+                    <view class="temp-item">
+                        <text class="movie-content"><text style="font-size:30rpx;font-weight:bold">简介：</text>{{item.content}}</text>
+                    </view>
+                    
+                </view>
+            </view>
+            <view class="inline" style="width:100%;background-color:#FFFFFF;height:5rpx;margin-top"></view>
+        </block>
+    </view>
+</view>
